@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Skills() {
   const skills = [
     { name: 'JAVA', level: 90 },
@@ -33,6 +31,11 @@ export default function Skills() {
                 <div
                   className="h-full bg-blue-600 rounded-full transition-all duration-500"
                   style={{ width: `${skill.level}%` }}
+                  role="progressbar"
+                  aria-label={`${skill.name} proficiency`}
+                  aria-valuenow={skill.level}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
                 />
               </div>
               <span className="text-gray-600 text-xs">{skill.level}%</span>

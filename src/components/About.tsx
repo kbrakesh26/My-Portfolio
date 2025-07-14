@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Brain, Database } from 'lucide-react';
 
 export default function About() {
@@ -35,6 +34,7 @@ export default function About() {
           </div>
         </div>
         <div className="mt-12 text-center">
+          <p className="text-gray-600
           <p className="text-gray-600 max-w-2xl mx-auto">
             I'm a final year Computer Science Engineering student with a passion for technology and innovation.
             My journey in tech has led me to explore various domains while focusing on building efficient
