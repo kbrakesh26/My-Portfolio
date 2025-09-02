@@ -7,8 +7,6 @@ const projects = [
   {
     title: 'TARANG',
     description: 'A disaster resilient Progresive Web App (PWA)- built to enable emergency communication without the internet during critical situations like floods, earthquakes or power outages.',
-    link: 'https://github
-    description: 'A disaster resilient Progresive Web App (PWA)- built to enable emergency communication without the internet during critical situations like floods, earthquakes or power outages.',
     link: 'https://github.com/CodeBytes0101/Tarang',
   },
   {

@@ -27,16 +27,16 @@ export default function Skills() {
           {skills.map((skill) => (
             <div key={skill.name} className="bg-white rounded-lg shadow p-4 flex flex-col items-center border border-blue-100 hover:shadow-lg hover:scale-105 transition-transform duration-200 text-center">
               <span className="font-bold text-blue-800 text-base mb-1">{skill.name}</span>
-              <div className="w-full h-2 bg-gray-200 rounded-full mb-1">
+              <div className="w-full h-2 bg-gray-200 rounded-full mb-1 relative">
                 <div
-                  className="h-full bg-blue-600 rounded-full transition-all duration-500"
-                  style={{ width: `${skill.level}%` }}
+                  className={`h-full bg-blue-600 rounded-full transition-all duration-500 skill-bar`}
+                  data-level={skill.level}
                   role="progressbar"
-                  aria-label={`${skill.name} proficiency`}
-                  aria-valuenow={skill.level}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
+                  aria-label={skill.name + ' proficiency'}
                 />
+                {skill.level < 50 && (
+                  <div className="absolute left-0 right-0 top-full mt-1 h-0.5 bg-red-500 rounded-full animate-pulse"></div>
+                )}
               </div>
               <span className="text-gray-600 text-xs">{skill.level}%</span>
             </div>

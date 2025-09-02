@@ -13,3 +13,16 @@ body {
 ::selection {
   @apply bg-blue-600 text-white;
 }
+
+.skill-bar {
+  width: 0%;
+  transition: width 0.5s;
+}
+.skill-bar[data-level="65"] { width: 65%; }
+.skill-bar[data-level="70"] { width: 70%; }
+.skill-bar[data-level="75"] { width: 75%; }
+.skill-bar[data-level="80"] { width: 80%; }
+.skill-bar[data-level="85"] { width: 85%; }
+.skill-bar[data-level="90"] { width: 90%; }
+
+/* Error underline for low skill levels is handled inline in JSX for now */
